@@ -19,7 +19,31 @@
   <stop  offset="0" style="stop-color:#DBA682"/>
   <stop  offset="1" style="stop-color:#C77569"/>
 </linearGradient>
+<div class="lightning">
+
+  <div class="weather-control">
+    <h2>Move the slider to turn the weather from fair to foul</h2>
+      <input id="weather-setter" type="range"  min="0" max="100" value="0"/>
+  </div>
   
+  <div id="sun"></div>
+
+
+  <div class="cloud-wrapper">
+    <div class="puff puff-1"></div>
+    <div class="puff puff-2"></div>
+    <div class="puff puff-3"></div>
+    <div class="puff puff-4"></div>
+    <div class="puff puff-5"></div>
+    <div class="puff puff-6"></div>
+    <div id="rain-wrapper">
+      <div id="rain"></div>
+    </div>
+
+  </div>
+
+</div>
+
 <path id="particleMaskTemplate"  d="M800,0v328.5c-0.3-0.6-0.6-1.1-1-1.1c-1.3,0-1.3,0.8-2.7,0.8c-1.3,0-1.3,1.3-2.7,1.3
   c-1.3,0-1.3-0.9-2.7-0.9s-1.3-0.5-2.7-0.5c-1.3,0-1.3,0.9-2.7,0.9c-1.3,0-1.3,0.9-2.7,0.9s-1.3-1.8-2.7-1.8c-1.3,0-1.3-1.3-2.7-1.3
   c-1.3,0-1.3,4.5-2.7,4.5s-1.3-1.7-2.7-1.7c-1.3,0-1.3-2.8-2.7-2.8c-1.3,0-1.3,1.7-2.7,1.7s-1.3,3-2.7,3c-1.3,0-1.3-2.7-2.7-2.7
@@ -97,7 +121,7 @@
   </g>
   </g>
   </mask>
-  
+  </clipPath> 
 <linearGradient id="cactusGrad" gradientUnits="userSpaceOnUse" x1="34.55" y1="127.9" x2="34.55" y2="1.818989e-012">
 <stop  offset="0" stop-opacity="0.2" style="stop-color:#D3997F"/>
   <stop  offset="0.6" style="stop-color:#985551"/>
@@ -109,7 +133,7 @@
   V34.6c0-4.4-3.5-7.9-7.9-7.9S0,30.2,0,34.6l0,0v23.3c0,12,9.8,21.8,21.8,21.8l0,0c0,0,0,74.6,0,88.2s25.5,12.4,25.5,0s0-95.9,0-95.9
   c12,0,21.8-9.8,21.8-21.8l0,0V34.6c0-4.4-3.5-7.9-7.9-7.9s-7.9,3.5-7.9,7.9l0,0v15.6c0,3.3-2.7,6-6,6l0,0L47.3,12.8z"/>
 </svg>
-
+<!-- 
 <svg class='cactus-two' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="-150px" y="0px" width="100%" height="181.917px" viewBox="0 0 215.069 121.917" enable-background="new 0 0 215.069 121.917" xml:space="preserve">
   <path class="cactus" d="M47.3,12.8c0-7-5.7-12.8-12.8-12.8S21.8,5.7,21.8,12.8l0,0V64c-3.3,0-6-2.7-6-6l0,0
   V34.6c0-4.4-3.5-7.9-7.9-7.9S0,30.2,0,34.6l0,0v23.3c0,12,9.8,21.8,21.8,21.8l0,0c0,0,0,74.6,0,88.2s25.5,12.4,25.5,0s0-95.9,0-95.9
@@ -120,7 +144,7 @@
   <path class="cactus" d="M47.3,12.8c0-7-5.7-12.8-12.8-12.8S21.8,5.7,21.8,12.8l0,0V64c-3.3,0-6-2.7-6-6l0,0
   V34.6c0-4.4-3.5-7.9-7.9-7.9S0,30.2,0,34.6l0,0v23.3c0,12,9.8,21.8,21.8,21.8l0,0c0,0,0,74.6,0,88.2s25.5,12.4,25.5,0s0-95.9,0-95.9
   c12,0,21.8-9.8,21.8-21.8l0,0V34.6c0-4.4-3.5-7.9-7.9-7.9s-7.9,3.5-7.9,7.9l0,0v15.6c0,3.3-2.7,6-6,6l0,0L47.3,12.8z"/>
-</svg>
+</svg> -->
 
 <svg  version="1.1" x="650px" y="-50px" width="20%" height="221.917px" viewBox="0 0 215.069 121.917">
   <g class="cloud">
@@ -272,6 +296,7 @@
   </g>
 </svg>
 </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script src="anime.min.js"></script>
   <script src="index.js"></script>
 </body>
