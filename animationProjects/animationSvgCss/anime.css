@@ -1,0 +1,324 @@
+
+.svg {
+  height: auto;
+}
+
+.right-foot path {
+  fill: #ff0000;
+}
+
+.left-foot path {
+  fill: #ff0000;
+}
+
+.eye ellipse {
+  fill: black;
+}
+
+@keyframes eye {
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}
+
+.eye {
+  animation: eye 1s ease infinite;
+}
+
+@keyframes left-foot {
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}
+
+.left-foot {
+  animation: left-foot 5s ease infinite;
+}
+
+.cactus {
+  width: 30%;
+  animation:cactus 5s infinite;
+  -webkit-animation:mymove 10s infinite;
+}
+
+@-webkit-keyframes cactus {
+    0%, 100% {
+        -webkit-transform: rotate(0deg);
+        fill: #000000;
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        fill: #78ab98;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        fill: #aa7454;
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        fill: #123456;
+    }
+}
+
+.cactus {
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+    fill: #231F20;
+}
+
+.cactus-one {
+
+}
+
+.cactus-two {
+  
+}
+
+.cactus-three {
+  
+}
+
+.cactus {
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 10s infinite;
+}
+
+@-webkit-keyframes mymove {
+    0%, 100% {
+        fill: #000000;
+    }
+    25% {
+        fill: #78ab98;
+    }
+    50% {
+        fill: #aa7454;
+    }
+    75% {
+        fill: #123456;
+    }
+}
+.cactus {
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+    fill: #231F20;
+}
+
+.right-foot {
+  animation: right-foot 5s ease infinite;
+}
+
+@keyframes right-foot {
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}
+
+@keyframes floating {
+  0%   {transform: translateY(0)}
+  25%  {transform: translateY(-25px)}
+  75%  {transform: translateY(25px)}
+  100% {transform: translateY(0)}
+}
+
+.floating {
+  animation: floating 5s linear infinite;
+}
+
+.mainSVG {
+  position: absolute;
+}
+
+.svg {
+  position: relative;
+}
+
+.right-eye {
+  fill: white;
+  font-size: 63px;
+  font-family: Sans-Serif;
+}
+
+.right-eye {
+  animation: hideshow 10s  ease infinite;
+}
+
+@keyframes hideshow {
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}
+
+#sun {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: #fff5a0;
+  box-shadow: 2px 2px 100px 20px #ffeaa0;
+  animation: radiant 2s infinite;
+}
+
+.weather-control {
+  background: white;
+  width: 250px;
+  text-align: center;
+  padding: 30px;
+  font-family: "Libre Baskerville";
+  font-size: 12px;
+  top: 0;
+  left: 900px;
+}
+
+#weather-setter {
+  width: 90%;
+}
+
+.lightning {
+  position: absolute;
+  background-color: transparent;
+}
+
+.lightning-active {
+   animation: lightning 1.2s infinite;
+}
+
+.cloud-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 385px;
+  border: 1px solid transparent;
+  left: 800px;
+  bottom: 200px;
+}
+
+.puff {
+  border-radius: 50%;
+  position: absolute;
+  background-image:
+    linear-gradient(
+      whitesmoke, darkslategrey
+    );
+  background-size: auto 800px;
+  background-position: 50% 0%;
+  z-index: 100;
+}
+
+.puff-1 {
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 60px;
+}
+
+.puff-2 {
+  width: 60px;
+  height: 50px;
+  top: 60px;
+  left: 80px;
+}
+
+.puff-3 {
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 100px;
+}
+
+.puff-4 {
+  width: 60px;
+  height: 60px;
+  top: 50px;
+  left: 120px
+}
+
+.puff-5 {
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 150px;
+}
+
+.puff-6 {
+  width: 40px;
+  height: 40px;
+  top: 110px;
+  left: 200px;
+}
+
+#rain-wrapper {
+  width: 280px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#rain {
+  display: none;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.drop {
+  width:1px;
+  height:80px;
+  position: absolute;
+  bottom:200px;
+  animation: falling 1s linear infinite;
+  background:linear-gradient(transparent, #d3f4ff);
+}
+
+@keyframes falling {
+  100% {
+    margin-top: 800px;
+  }
+}
+
+@keyframes lightning {
+  10%, 30% { background-color: rgba(255, 251, 226, 0.5);}
+  15%, 35% {
+    background-color: transparent;
+  }
+}
+
+@keyframes radiant  {
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.cartoon-svg {
+  width: 10%;
+}
+
+.person-cartoon {
+  width: 20%;
+  right: 100px;
+}
+
+.cartoon {
+  width: 30%;
+  background: #FC0;
+  transform: translateY(220px);
+  animation: popup 10s 6.5s ease infinite;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(150px);
+  }
+  34% {
+    transform: translateY(20px);
+  }
+  37% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}

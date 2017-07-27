@@ -1,0 +1,61 @@
+.logomorph {
+  width: 550px;
+}
+
+.st0 {
+  fill: #222222;
+}
+
+.st1 {
+  fill: #B5B5BE;
+}
+
+.st2 {
+  fill: #858594;
+}
+
+.st3 {
+  fill: #D0D0D6;
+}
+
+.st4 {
+  fill: #414159;
+}
+
+.st5 {
+  opacity: 0.66;
+  fill: #414159;
+}
+
+.st6 {
+  fill: none;
+  stroke: #E18728;
+}
+
+.st7 {
+  fill: #4CA454;
+}
+
+.st8 {
+  fill: #BE4C39;
+}
+
+#k2 {
+  stroke: black;
+}
+
+#repodot1, #repodot2, #repodot3 {
+  fill: white;
+}
+
+#dotActivate {
+  cursor: pointer;
+}
+
+#star, #halfstar, #k2, #repo, #repofill, #i2, #body, #bracket, #kturn, #desktop, #phone, #link, #lbracket, #rbracket, #z1, #z2, .hide {
+  visibility: hidden;
+}
+
+#rings, #burst, #slash, #repodot1, #repodot2, #repodot3, #highlight, #shadow {
+  visibility: hidden;
+}
